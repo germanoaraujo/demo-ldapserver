@@ -28,7 +28,7 @@ if [ ! -f /data/lib/ldap/DB_CONFIG ]; then
     sed -i "s+%LDAP_MANAGER_PASSWORD%+${MANAGER_PWD//+/\\+}+" /root/domain.ldif
     ldapmodify -Y EXTERNAL -H ldapi:/// -f /root/domain.ldif
 
-    ldapadd -x -D cn=Manager,dc=tuleap,dc=local -w $LDAP_MANAGER_PASSWORD -f /root/base.ldif
+    ldapadd -x -D cn=Manager,dc=redhatworkshops,dc=com -w $LDAP_MANAGER_PASSWORD -f /root/base.ldif
 
     service slapd stop
     sleep 3

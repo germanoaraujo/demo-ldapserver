@@ -1,6 +1,6 @@
-dn: cn=Bob Jones,ou=people,dc=tuleap,dc=local
-cn: Bob Jones
-sn: Jones
+dn: cn=Germano Silva,ou=people,dc=redhatworkshops,dc=com
+cn: Germano Silva
+sn: Silva
 objectClass: inetOrgPerson
 userPassword: p@ssw0rd
-uid: bjones
+uid: gsilva
